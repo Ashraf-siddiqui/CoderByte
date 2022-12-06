@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Zapproved.tests.AddOrganizationTest">
+      <class name="com.Nexquare.tests.AddStaffTest">
         <methods>
-          <include name="TearDown"/>
-          <include name="deleteUserFromOrganization" invocation-numbers="0"/>
+          <include name="feeConfiguration"/>
           <include name="initialie"/>
           <include name="SetUp"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- com.Zapproved.tests.AddOrganizationTest -->
+      </class> <!-- com.Nexquare.tests.AddStaffTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

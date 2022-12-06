@@ -1,4 +1,4 @@
-package com.Zapproved.pages;
+package com.Nexquare.pages;
 
 import org.openqa.selenium.WebDriver;
 
@@ -10,33 +10,24 @@ public class PageCollection {
 		this.driver = driver;
 	}
 
-	private SearchCompany searchCompany;
-	private AddUser addUser;
-	private AddOrganization addOrganization;
-	private UserSearch userSearch;
-	private DeleteUser deleteUser;
+	private AddStaff addStaff;
 
-	public SearchCompany getSearchCompany() {
+	private EditStaff editStaff;
 
-		return (searchCompany == null) ? searchCompany = new SearchCompany(driver) : searchCompany;
+	private FeeConfiguration feeConfiguration;
 
-	}
-
-	public AddUser getAddUser() {
-		return (addUser == null) ? addUser = new AddUser(driver) : addUser;
-	}
-
-	public AddOrganization getAddOrganization() {
-		return (addOrganization == null) ? addOrganization = new AddOrganization(driver) : addOrganization;
-	}
-
-	public UserSearch getUserSearch() {
-		return (userSearch == null) ? userSearch = new UserSearch(driver) : userSearch;
+	public AddStaff getAddStaff() {
+		return (addStaff == null) ? addStaff = new AddStaff(driver) : addStaff;
 
 	}
 
-	public DeleteUser getDeleteUser() {
-		return (deleteUser == null) ? deleteUser = new DeleteUser(driver) : deleteUser;
+	public EditStaff getEditStaff() {
+		return (editStaff == null) ? editStaff = new EditStaff(driver) : editStaff;
+	}
+
+	public FeeConfiguration getFeeConfiguration() {
+		return (feeConfiguration == null) ? feeConfiguration = new FeeConfiguration(driver) : feeConfiguration;
 
 	}
+
 }
